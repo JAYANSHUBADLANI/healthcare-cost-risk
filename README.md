@@ -1,5 +1,7 @@
 # Healthcare cost prediction and high cost claimant risk stratification
 
+[![tests](https://github.com/JAYANSHUBADLANI/healthcare-cost-risk/actions/workflows/tests.yml/badge.svg)](https://github.com/JAYANSHUBADLANI/healthcare-cost-risk/actions/workflows/tests.yml)
+
 I built a member level cost prediction model on CMS Medicare claims data and used it to
 stratify members into risk tiers for care management targeting. The model is a two part
 cost model, the standard health economics treatment for spending data, and it is
