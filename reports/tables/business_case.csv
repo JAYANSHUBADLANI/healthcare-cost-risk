@@ -1,0 +1,3 @@
+scenario,members_targeted,spend_reached,mean_spend_per_targeted_member,outreach_spend,avoided_cost,net_benefit,return_per_dollar_spent,advantage_over_random
+targeted_high_tier,5643,49138630.0,8707.89,2821500.0,1719852.05,-1101647.95,0.6096,1095332.58
+random_same_size,5643,17843413.53,3162.04,2821500.0,624519.47,-2196980.53,0.2213,1095332.58

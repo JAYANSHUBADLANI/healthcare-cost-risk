@@ -1,0 +1,55 @@
+{
+  "train_pair": "2008 to 2009",
+  "eval_pair": "2009 to 2010",
+  "train_members": 114618,
+  "holdout_members": 112845,
+  "in_sample_combined": {
+    "r_squared": 0.318,
+    "mean_absolute_error": 3553.49,
+    "mean_actual": 5331.93,
+    "mean_predicted": 5322.92,
+    "predictive_ratio": 0.9983,
+    "spearman": 0.8161,
+    "pearson": 0.5646
+  },
+  "participation": {
+    "auc": 0.9681,
+    "observed_rate": 0.8843,
+    "predicted_rate": 0.9233
+  },
+  "severity": {
+    "members_with_cost": 99792,
+    "mean_actual": 3575.68,
+    "mean_predicted": 6394.3,
+    "mean_absolute_error": 4556.53,
+    "spearman": 0.6177
+  },
+  "combined": {
+    "r_squared": -0.2384,
+    "mean_absolute_error": 4124.59,
+    "mean_actual": 3162.04,
+    "mean_predicted": 5742.04,
+    "predictive_ratio": 1.8159,
+    "spearman": 0.7167,
+    "pearson": 0.3929
+  },
+  "high_cost": {
+    "quantile": 0.9,
+    "cost_threshold": 7050.0,
+    "members_flagged": 11300,
+    "auc": 0.7644
+  },
+  "level_shift": {
+    "trend_factor_applied": 0.5507,
+    "note": "mean spend fell 40.7 percent between the fitting year and the target year, so a model fitted on the earlier level over predicts the later one. This row rescales predictions by a single constant to separate the level error from the ranking quality. The constant is derived from the target year and is therefore a diagnostic decomposition, not a prospective result.",
+    "recalibrated": {
+      "r_squared": 0.1506,
+      "mean_absolute_error": 2415.44,
+      "mean_actual": 3162.04,
+      "mean_predicted": 3162.04,
+      "predictive_ratio": 1.0,
+      "spearman": 0.7167,
+      "pearson": 0.3929
+    }
+  }
+}

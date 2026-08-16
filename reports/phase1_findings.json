@@ -1,0 +1,57 @@
+{
+  "row_counts": {
+    "checks": [
+      {
+        "file": "beneficiary_2008",
+        "published": 116395,
+        "observed": 116395,
+        "matches": true
+      },
+      {
+        "file": "beneficiary_2009",
+        "published": 114618,
+        "observed": 114618,
+        "matches": true
+      },
+      {
+        "file": "beneficiary_2010",
+        "published": 112845,
+        "observed": 112845,
+        "matches": true
+      },
+      {
+        "file": "inpatient_claims",
+        "published": 66494,
+        "observed": 66494,
+        "matches": true
+      },
+      {
+        "file": "outpatient_claims",
+        "published": 792562,
+        "observed": 792562,
+        "matches": true
+      },
+      {
+        "file": "carrier_claims",
+        "published": 4745914,
+        "observed": 4745914,
+        "matches": true
+      },
+      {
+        "file": "pde_events",
+        "published": 5561154,
+        "observed": 5561154,
+        "matches": true
+      }
+    ],
+    "all_match": true
+  },
+  "emergency_proxy": {
+    "total_emergency_visits": 62896.0,
+    "members_with_any": 50190,
+    "pct_members_with_any": 14.6,
+    "proxy_is_populated": true
+  },
+  "members_2008": 116395,
+  "panel_rows": 343858
+}

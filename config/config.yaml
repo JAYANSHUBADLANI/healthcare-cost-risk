@@ -1,0 +1,66 @@
+paths:
+  raw_dir: "data/raw"
+  unzipped_dir: "data/unzipped"
+  interim_dir: "data/interim"
+  reports_dir: "reports"
+
+data:
+  sample: 2
+  years: [2008, 2009, 2010]
+  chronic_flag_columns:
+    - SP_ALZHDMTA
+    - SP_CHF
+    - SP_CHRNKIDN
+    - SP_CNCR
+    - SP_COPD
+    - SP_DEPRESSN
+    - SP_DIABETES
+    - SP_ISCHMCHT
+    - SP_OSTEOPRS
+    - SP_RA_OA
+    - SP_STRKETIA
+  chronic_flag_yes_value: 1
+  emergency_hcpcs_codes: ["99281", "99282", "99283", "99284", "99285"]
+  expected_counts:
+    beneficiary_2008: 116395
+    beneficiary_2009: 114618
+    beneficiary_2010: 112845
+    inpatient_claims: 66494
+    outpatient_claims: 792562
+    carrier_claims: 4745914
+    pde_events: 5561154
+  published_prevalence:
+    SP_COPD: 13.5
+    SP_ALZHDMTA: 19.2
+    SP_OSTEOPRS: 17.4
+    SP_CHRNKIDN: 16.1
+    SP_DEPRESSN: 21.3
+    SP_CHF: 28.5
+    SP_RA_OA: 15.4
+
+cohort:
+  min_coverage_months: 1
+
+model:
+  train_pair: [2008, 2009]
+  eval_pair: [2009, 2010]
+  high_cost_quantile: 0.90
+  severity_family: "gamma"
+  collinearity_threshold: 0.99
+  logistic_max_iter: 1000
+  random_seed: 42
+  challenger_n_estimators: 300
+  challenger_max_depth: 6
+  challenger_learning_rate: 0.05
+
+evaluation:
+  top_k_grid: [0.01, 0.02, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.40, 0.50]
+
+business_case:
+  tier_cutoffs: [0.80, 0.95]
+  target_tier: "high"
+  outreach_cost_per_member: 500.0
+  avoidable_cost_fraction: 0.10
+  engagement_rate: 0.35
+  sensitivity_outreach_costs: [200.0, 350.0, 500.0, 750.0, 1000.0]
+  sensitivity_avoidable_fractions: [0.02, 0.05, 0.10, 0.15, 0.20]

@@ -1,0 +1,5 @@
+policy,high_cost_auc,spearman_with_actual,pct_spend_captured_top_10,pct_high_cost_captured_top_10,lift_vs_random_top_10
+two_part_model,0.7644,0.7167,23.97,30.54,2.4
+challenger_boosted,0.7674,0.7169,23.7,30.22,2.37
+chronic_condition_count,0.7308,0.616,20.07,23.96,2.01
+prior_year_cost,0.728,0.6714,19.92,23.11,1.99

@@ -1,0 +1,8 @@
+condition,published_pct,observed_pct,abs_difference
+SP_ALZHDMTA,19.2,19.21,0.01
+SP_CHF,28.5,28.43,0.07
+SP_CHRNKIDN,16.1,16.05,0.05
+SP_COPD,13.5,13.73,0.23
+SP_DEPRESSN,21.3,21.21,0.09
+SP_OSTEOPRS,17.4,17.4,0.0
+SP_RA_OA,15.4,15.15,0.25

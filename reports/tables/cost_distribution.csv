@@ -1,0 +1,4 @@
+year,members,pct_zero_cost,mean_cost,median_cost,mean_cost_given_positive,p95_cost,p99_cost,max_cost,skew_of_positive,pct_spend_in_top_decile,pct_spend_in_top_percent
+2008,116395,13.77,4930.06,1780.0,5721.6,21080.0,53160.0,218770.0,4.937,56.63,14.96
+2009,114618,11.19,5331.93,2510.0,6005.95,20370.0,45816.6,191600.0,4.38,48.51,11.68
+2010,112845,11.46,3162.04,1530.0,3575.68,12010.0,28745.6,118780.0,5.314,49.93,13.47

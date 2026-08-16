@@ -1,0 +1,41 @@
+{
+  "high_cost": {
+    "definition": "top 10 percent of realised target year cost",
+    "cost_threshold": 7050.0,
+    "members_above_threshold": 11300,
+    "share_of_total_spend_pct": 49.96,
+    "mean_cost_high_group": 15775.99,
+    "mean_cost_rest": 1758.35
+  },
+  "assumptions": {
+    "outreach_cost_per_member": 500.0,
+    "avoidable_cost_fraction": 0.1,
+    "engagement_rate": 0.35,
+    "source": "assumed, not observed in the claims data"
+  },
+  "break_even_avoidable_fraction": 0.1641,
+  "business_case": [
+    {
+      "scenario": "targeted_high_tier",
+      "members_targeted": 5643,
+      "spend_reached": 49138630.0,
+      "mean_spend_per_targeted_member": 8707.89,
+      "outreach_spend": 2821500.0,
+      "avoided_cost": 1719852.05,
+      "net_benefit": -1101647.95,
+      "return_per_dollar_spent": 0.6096,
+      "advantage_over_random": 1095332.58
+    },
+    {
+      "scenario": "random_same_size",
+      "members_targeted": 5643,
+      "spend_reached": 17843413.53,
+      "mean_spend_per_targeted_member": 3162.04,
+      "outreach_spend": 2821500.0,
+      "avoided_cost": 624519.47,
+      "net_benefit": -2196980.53,
+      "return_per_dollar_spent": 0.2213,
+      "advantage_over_random": 1095332.58
+    }
+  ]
+}

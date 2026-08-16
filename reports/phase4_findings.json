@@ -1,0 +1,135 @@
+{
+  "feature_block_ablation": [
+    {
+      "feature_block": "clinical_profile_only",
+      "features_used": 18,
+      "high_cost_auc": 0.737,
+      "pct_spend_captured_top_10": 21.34,
+      "spearman_with_actual": 0.6412
+    },
+    {
+      "feature_block": "prior_utilisation_only",
+      "features_used": 15,
+      "high_cost_auc": 0.7646,
+      "pct_spend_captured_top_10": 23.91,
+      "spearman_with_actual": 0.7203
+    },
+    {
+      "feature_block": "full_model",
+      "features_used": 33,
+      "high_cost_auc": 0.7644,
+      "pct_spend_captured_top_10": 23.97,
+      "spearman_with_actual": 0.7167
+    }
+  ],
+  "top_features_two_part": [
+    {
+      "baseline_auc": 0.7644,
+      "feature": "log_prior_total_cost",
+      "mean_auc_drop": 0.11323,
+      "std_auc_drop": 0.00127
+    },
+    {
+      "baseline_auc": 0.7644,
+      "feature": "log_carrier_claims",
+      "mean_auc_drop": 0.08097,
+      "std_auc_drop": 0.00197
+    },
+    {
+      "baseline_auc": 0.7644,
+      "feature": "log_rx_fills",
+      "mean_auc_drop": 0.05366,
+      "std_auc_drop": 0.00088
+    },
+    {
+      "baseline_auc": 0.7644,
+      "feature": "prior_had_cost",
+      "mean_auc_drop": 0.02459,
+      "std_auc_drop": 0.00124
+    },
+    {
+      "baseline_auc": 0.7644,
+      "feature": "log_rx_days_supply",
+      "mean_auc_drop": 0.02449,
+      "std_auc_drop": 0.00057
+    },
+    {
+      "baseline_auc": 0.7644,
+      "feature": "log_prior_ip_cost",
+      "mean_auc_drop": 0.01124,
+      "std_auc_drop": 0.00041
+    },
+    {
+      "baseline_auc": 0.7644,
+      "feature": "log_op_visits",
+      "mean_auc_drop": 0.00697,
+      "std_auc_drop": 0.00027
+    },
+    {
+      "baseline_auc": 0.7644,
+      "feature": "log_ip_admissions",
+      "mean_auc_drop": 0.00496,
+      "std_auc_drop": 0.00013
+    }
+  ],
+  "top_features_challenger": [
+    {
+      "baseline_auc": 0.7674,
+      "feature": "log_carrier_claims",
+      "mean_auc_drop": 0.04653,
+      "std_auc_drop": 0.00114
+    },
+    {
+      "baseline_auc": 0.7674,
+      "feature": "log_prior_total_cost",
+      "mean_auc_drop": 0.0144,
+      "std_auc_drop": 0.00034
+    },
+    {
+      "baseline_auc": 0.7674,
+      "feature": "log_prior_rx_cost",
+      "mean_auc_drop": 0.00555,
+      "std_auc_drop": 0.00033
+    },
+    {
+      "baseline_auc": 0.7674,
+      "feature": "log_op_visits",
+      "mean_auc_drop": 0.0046,
+      "std_auc_drop": 0.00015
+    },
+    {
+      "baseline_auc": 0.7674,
+      "feature": "log_rx_fills",
+      "mean_auc_drop": 0.00162,
+      "std_auc_drop": 0.00019
+    },
+    {
+      "baseline_auc": 0.7674,
+      "feature": "log_prior_op_cost",
+      "mean_auc_drop": 0.00152,
+      "std_auc_drop": 0.0001
+    },
+    {
+      "baseline_auc": 0.7674,
+      "feature": "log_prior_carrier_cost",
+      "mean_auc_drop": 0.00082,
+      "std_auc_drop": 0.00031
+    },
+    {
+      "baseline_auc": 0.7674,
+      "feature": "log_prior_ip_cost",
+      "mean_auc_drop": 0.00047,
+      "std_auc_drop": 4e-05
+    }
+  ],
+  "figures_written": [
+    "concentration_curve.png",
+    "spend_concentration.png",
+    "calibration_by_decile.png",
+    "risk_tier_profile.png",
+    "permutation_importance.png",
+    "condition_cost_profile.png",
+    "business_case_sensitivity.png",
+    "cost_level_shift.png"
+  ]
+}

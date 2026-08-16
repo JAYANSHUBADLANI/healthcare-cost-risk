@@ -1,0 +1,4 @@
+risk_tier,members,mean_predicted_cost,mean_actual_cost,median_actual_cost,total_actual_cost,pct_of_members,pct_of_total_spend,cost_concentration_index
+low,90276,3872.5553,2319.2082,1140.0,209368840.0,80.0,58.6762,0.7335
+medium,16926,11415.555,5808.4231,3890.0,98313370.0,14.9993,27.5526,1.8369
+high,5643,18632.3499,8707.8912,5380.0,49138630.0,5.0007,13.7712,2.7539

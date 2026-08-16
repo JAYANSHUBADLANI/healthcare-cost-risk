@@ -1,0 +1,3 @@
+dropped_feature,kept_feature,abs_correlation
+log_carrier_distinct_physicians,log_carrier_claims,0.998892
+log_rx_distinct_products,log_rx_fills,0.999999
